@@ -66,7 +66,7 @@ word2vec-movies/
 └── requirements.txt         # Dépendances
 ```
 
-## 🚀 Utilisation
+## Utilisation
 
 ### 1. Exécuter le notebook
 
