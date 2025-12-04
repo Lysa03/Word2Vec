@@ -4,11 +4,11 @@
 [![Gensim](https://img.shields.io/badge/Gensim-4.3+-green.svg)](https://radimrehurek.com/gensim/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 📋 Description
+## Description
 
 Ce projet implémente un modèle **Word2Vec** entraîné sur le dataset Kaggle Movies pour apprendre des représentations vectorielles (embeddings) des mots à partir des synopsis de films. Le modèle capture les relations sémantiques entre les mots du domaine cinématographique.
 
-## 🎯 Objectifs
+## Objectifs
 
 - Prétraiter un corpus de descriptions de films
 - Entraîner un modèle Word2Vec avec Gensim
@@ -16,7 +16,7 @@ Ce projet implémente un modèle **Word2Vec** entraîné sur le dataset Kaggle M
 - Visualiser les embeddings en 2D avec t-SNE
 - Évaluer les performances via des tests d'analogies
 
-## 📊 Dataset
+## Dataset
 
 **Source** : [Kaggle Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset)
 
@@ -25,7 +25,7 @@ Le dataset contient des métadonnées de films incluant :
 - Genres, dates de sortie
 - Informations de production
 
-## 🛠️ Installation
+## Installation
 
 ### Prérequis
 
@@ -54,7 +54,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 ```
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 word2vec-movies/
@@ -91,7 +91,7 @@ result = model.wv.most_similar(positive=['king', 'woman'], negative=['man'], top
 print(result)  # -> queen
 ```
 
-## 📈 Résultats
+## Résultats
 
 ### Performances Globales
 
@@ -114,8 +114,8 @@ print(result)  # -> queen
 
 | Analogie | Résultat attendu | Résultat obtenu | Score |
 |----------|------------------|-----------------|-------|
-| king - man + woman | queen | ✅ queen | 0.550 |
-| evil - good + hero | villain | ⚠️ villain (3ème) | 0.388 |
+| king - man + woman | queen | queen | 0.550 |
+| evil - good + hero | villain | villain (3ème) | 0.388 |
 
 ### Visualisations t-SNE
 
@@ -124,7 +124,7 @@ Le modèle produit des clusters cohérents :
 - **Famille** : father, mother, son, daughter regroupés
 - **Personnages** : hero, villain dans des zones proches
 
-## ⚙️ Hyperparamètres du Modèle
+## Hyperparamètres du Modèle
 
 ```python
 Word2Vec(
@@ -138,7 +138,7 @@ Word2Vec(
 )
 ```
 
-## 🔍 Analyse des Résultats
+## Analyse des Résultats
 
 ### Points Forts
 
@@ -158,19 +158,19 @@ Word2Vec(
 
 ⚠️ Biais du corpus orienté synopsis de films
 
-## 📚 Références
+##  Références
 
 - [Word2Vec Paper (Mikolov et al., 2013)](https://arxiv.org/abs/1301.3781)
 - [Gensim Documentation](https://radimrehurek.com/gensim/)
 - [t-SNE Visualization](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
 
-## 👤 Auteur
+##  Auteur
 
 **Lys** - Master 2 Big Data & Business Intelligence, Sorbonne Paris Nord
 
 ---
 
-## 📄 License
+##  License
 
 Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
